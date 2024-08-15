@@ -1,5 +1,5 @@
 export const languageOptions = [
-  { value: "en-US", label: "English" },
+  { value: "en-IN", label: "English" },
   { value: "hi-IN", label: "Hindi" },
   { value: "bn-IN", label: "Bengali" },
   { value: "kn-IN", label: "Kannada" },
