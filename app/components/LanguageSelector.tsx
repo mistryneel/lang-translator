@@ -1,6 +1,10 @@
 import { languageOptions } from '../utils/constants';
 
-const LanguageSelector = ({ value, onChange, disabledValue }) => (
+const LanguageSelector = ({ value, onChange, disabledValue }: {
+  value: string;
+  onChange: (value: string) => void;
+  disabledValue?: string;
+}) => (
   <select 
     className="w-full p-2 border border-gray-300 rounded"
     value={value}

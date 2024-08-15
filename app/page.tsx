@@ -3,22 +3,20 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import LanguageSelector from './components/LanguageSelector';
 import TranslationArea from './components/TranslationArea';
-import { languageOptions } from './utils/constants';
 
 const Page = () => {
   const [sourceLanguage, setSourceLanguage] = useState('');
   const [targetLanguage, setTargetLanguage] = useState('');
 
-  const handleSourceLanguageChange = (newValue) => {
+  const handleSourceLanguageChange = (newValue: string) => {
     setSourceLanguage(newValue);
     if (newValue === targetLanguage) {
       setTargetLanguage('');
     }
   };
 
-  const handleTargetLanguageChange = (newValue) => {
+  const handleTargetLanguageChange = (newValue: string) => {
     setTargetLanguage(newValue);
     if (newValue === sourceLanguage) {
       setSourceLanguage('');

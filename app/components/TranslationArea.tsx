@@ -1,6 +1,11 @@
 import LanguageSelector from './LanguageSelector';
 
-const TranslationArea = ({ language, onLanguageChange, otherLanguage, isSource }) => (
+const TranslationArea = ({ language, onLanguageChange, otherLanguage, isSource }: {
+  language: string;
+  onLanguageChange: (language: string) => void;
+  otherLanguage: string;
+  isSource: boolean;
+}) => (
   <div className="w-full sm:w-1/2 flex flex-col gap-2">
     <LanguageSelector 
       value={language}
